@@ -19,7 +19,7 @@ import org.junit.Test;
 
 import org.springframework.util.SerializationUtils;
 
-import static org.assertj.core.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 /**
  * @author Dave Syer
@@ -42,7 +42,7 @@ public class VetTests {
     
     @Test
     public void testFAIL() {
-        assertNotNull(null);
+        assertThat("abc").isEqualTo("cba");
     }
 
 }
