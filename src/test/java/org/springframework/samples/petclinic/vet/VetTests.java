@@ -19,7 +19,7 @@ import org.junit.Test;
 
 import org.springframework.util.SerializationUtils;
 
-import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.*`;
 
 /**
  * @author Dave Syer
@@ -38,6 +38,11 @@ public class VetTests {
         assertThat(other.getFirstName()).isEqualTo(vet.getFirstName());
         assertThat(other.getLastName()).isEqualTo(vet.getLastName());
         assertThat(other.getId()).isEqualTo(vet.getId());
+    }
+    
+    @Test
+    public void testFAIL() {
+        assertNotNull(null);
     }
 
 }
