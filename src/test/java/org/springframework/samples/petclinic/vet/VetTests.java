@@ -19,7 +19,7 @@ import org.junit.Test;
 
 import org.springframework.util.SerializationUtils;
 
-import static org.assertj.core.api.Assertions.*`;
+import static org.assertj.core.api.Assertions.*;
 
 /**
  * @author Dave Syer
